@@ -1,0 +1,546 @@
+@font-face {
+    font-family: "IBM Plex Sans Condensed";
+    src: url("IBMPlexSansCondensed-Medium.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    --width_arrow_left_right: 58px;
+    --height_arrow_left_right: 62px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 108px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%), 0 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.logo_burger_image {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .logo {
+    background: url("/img/Harry_Potter_logo.png") no-repeat center;
+    background-size: var(--background_size);
+    width: 100%;
+    position: absolute;
+    height: 95px;
+    padding: 10px 0;
+    --background_size: 45px;
+}
+
+.burger {
+    background: url("/img/burger.png") no-repeat right;
+    background-size: 100px;
+    width: 100%;
+    position: absolute;
+    height: 78px;
+    padding: 10px 0;
+}
+
+.content_header {
+    display: none;
+
+}
+
+.content_header_block {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    height: max-content;
+}
+
+.content_header_1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.image_header_1 {
+    width: 30px;
+    height: 30px;
+    background: url("/img/home.png") no-repeat;
+    background-size: 30px;
+}
+
+.description_1 {
+    height: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.5%;
+    letter-spacing: 0.015em;
+    color: #442016;
+    margin: auto;
+}
+
+.content_header_2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.image_header_2 {
+    width: 22px;
+    height: 30px;
+    background: url("img/image_about_author.png") no-repeat;
+    background-size: 22px;
+}
+
+.description_2 {
+    line-height: 33px;
+    margin: auto;
+}
+
+.content_header_3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.image_header_3 {
+    width: 34px;
+    height: 34px;
+    background: url("img/image_the_main_character.png") no-repeat;
+    background-size: 34px;
+}
+
+.description_3 {
+    line-height: 33px;
+    margin: auto;
+}
+
+.content_header_4 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.image_header_4 {
+    width: 43px;
+    height: 33px;
+    background: url("img/image_book.png") no-repeat;
+    background-size: 43px;
+}
+
+.description_4 {
+    line-height: 33px;
+    margin: auto;
+}
+
+.content_header_5 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.image_header_5 {
+    width: 35px;
+    height: 33px;
+    background: url("img/about_created.png") no-repeat;
+    background-size: 35px;
+}
+
+.description_5 {
+    line-height: 33px;
+    margin: auto;
+}
+
+.header_height {
+    height: 375px;
+}
+
+.image_about_Garry_Potter {
+    width: 320px;
+    height: 156px;
+    background: url("img/image_about_Harry_Potter.png") no-repeat;
+    background-size: 320px;
+    margin: 10px auto;
+}
+
+.image_about_Garry_Potter:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.text_about_book {
+    width: 262px;
+    height: 164px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 117%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.text_about_main_character_book {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #BBBBBB;
+}
+
+.border_about_harry_potter {
+    width: 291px;
+    box-sizing: border-box;
+    border: 4px dashed #921D00;
+    border-radius: 36px;
+    height: 504px;
+    margin: auto auto 10px;
+}
+
+.border_name {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #442016;
+    width: 286px;
+    padding: 10px 0;
+}
+
+.image_harry_potter {
+    width: 256px;
+    height: 213px;
+    background: url("img/image_harry_potter.png") no-repeat;
+    border-radius: 33px;
+    background-size: 256px;
+    margin: auto;
+}
+
+.image_harry_potter:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.description_main_character {
+    font-weight: 400;
+    font-size: 18px;
+    width: 253px;
+    line-height: 162.5%;
+    letter-spacing: 0.015em;
+    color: #442016;
+    margin: auto;
+    height: 154px;
+}
+
+.text_interesting_fact {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #BBBBBB;
+}
+
+.image_interesting_fact {
+    width: 99px;
+    height: 98px;
+    background: url("img/image_interesting_fact.png") no-repeat;
+    background-size: 99px;
+    margin: auto auto 10px;
+}
+
+.text_interesting_fact_1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162.5%;
+    letter-spacing: 0.015em;
+    color: #442016;
+    width: 284px;
+    height: 270px;
+    margin: auto;
+}
+
+.text_about_author {
+    width: 283px;
+    height: 85px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #BBBBBB;
+    margin: auto;
+}
+
+.image_author_dj_Rolling {
+    width: 257px;
+    height: 274px;
+    background: url("img/image_author.png") no-repeat;
+    background-size: 257px;
+    margin: auto auto 10px;
+}
+
+.image_author_dj_Rolling:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.description_image {
+    width: 257px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #9C9B9B;
+    margin: auto;
+}
+
+.name_author {
+    width: 265px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+    color: #442016;
+}
+
+.name_author {
+    padding: 20px 0;
+    margin: auto;
+    width: 265px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+    color: #442016;
+}
+
+.description_name_author {
+    width: 257px;
+    height: 455px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162.5%;
+    letter-spacing: 0.015em;
+    color: #442016;
+    margin: auto;
+}
+
+.text_book {
+    width: 260px;
+    height: 49px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #BBBBBB;
+    margin: auto;
+}
+
+.image_1 {
+    width: 187px;
+    height: 262px;
+    background: url("book_harry_potter/book_1.png") no-repeat;
+    background-size: 187px;
+    padding: 15px 0;
+    margin: auto;
+}
+
+.image_1:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flex_setting_slider {
+    display: flex;
+    margin: auto;
+    width: 281px;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.arrow_left {
+    width: var(--width_arrow_left_right);
+    height: var(--height_arrow_left_right);
+    background: url("arrows/arrow_left.png") no-repeat;
+    background-size: 58px;
+}
+
+.scroll {
+    width: 122px;
+    height: 14px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 22px auto 22px;
+    position: relative;
+}
+
+.scroll .black_part {
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    background: #000000;
+}
+
+.arrow_right {
+    width: var(--width_arrow_left_right);
+    height: var(--height_arrow_left_right);
+    background: url("arrows/arrow_right.png") no-repeat;
+    background-size: 58px;
+}
+
+.text_about_created_website {
+    width: 281px;
+    height: 98px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #BBBBBB;
+    margin: auto;
+}
+
+.image_created_website {
+    width: 281px;
+    height: 363px;
+    background: url("img/image_created_website.png") no-repeat;
+    background-size: 281px;
+    margin: auto;
+}
+
+.name_created_website {
+    width: 281px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #442016;
+    margin: auto;
+}
+
+.link_about_me {
+    width: 253px;
+    height: 43px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 162.5%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #0000FF;
+    margin: auto;
+}
+
+.content {
+    width: 320px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .image_about_Garry_Potter {
+        width: 100%;
+        background-size: 100%;
+        height: 375px;
+    }
+
+    .text_about_book {
+        width: 735px;
+        height: 78px;
+    }
+
+    .border_about_harry_potter {
+        width: 698px;
+        height: 300px;
+    }
+
+    .border_name {
+        width: 694px;
+    }
+
+    .flex_768px {
+        display: flex;
+    }
+
+    .image_interesting_fact {
+        margin: 31px 40px 0;
+    }
+
+    .text_interesting_fact_1 {
+        width: 500px;
+        margin: 10px auto;
+    }
+
+    .text_interesting_fact_1_768px_1 {
+        height: 150px;
+    }
+
+    .text_interesting_fact_1_768px_2 {
+        height: 137px;
+    }
+
+    .text_interesting_fact_1_768px_3 {
+        height: 84px;
+        margin: 36px auto;
+    }
+
+    .content_about_author {
+        margin: auto;
+    }
+
+    .content_about_author_2 {
+        margin: auto;
+    }
+
+    .description_name_author {
+        width: 361px;
+        height: 389px;
+    }
+
+    .image_1 {
+        width: 600px;
+        height: 843px;
+        background-size: 600px;
+    }
+
+    .content_after_image {
+        margin: auto;
+    }
+
+    .text_about_created_website {
+        width: 330px;
+        height: 35px;
+    }
+
+    .content {
+        width: 600px;
+    }
+
+    .image_interesting_fact {
+        width: 119px;
+    }
+
+    .image_author_dj_Rolling {
+        margin: auto 20px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text_interesting_fact_1 {
+        width: 755px;
+    }
+
+    .image_about_Garry_Potter {
+        height: 500px;
+    }
+
+    .content {
+        width: 900px;
+    }
+}
