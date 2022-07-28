@@ -34,7 +34,7 @@ body {
 }
 
 .burger {
-    background: url("/img/burger.png") no-repeat right;
+    background: url("https://georgij1.github.io/harryPotter/img/burger.png") no-repeat right;
     background-size: 100px;
     width: 100%;
     position: absolute;
