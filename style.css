@@ -24,7 +24,7 @@ body {
 }
 
 .header .logo {
-    background: url("/img/Harry_Potter_logo.png") no-repeat center;
+    background: url("../harryPotter/img/Harry_Potter_logo.png") no-repeat center;
     background-size: var(--background_size);
     width: 100%;
     position: absolute;
